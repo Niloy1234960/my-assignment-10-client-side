@@ -44,7 +44,7 @@ const ProductsDetails = () => {
     console.log("Interest submitted:", formData);
    
 
-    fetch("http://localhost:3000/interst",{
+    fetch("https://3d-models-server-coral.vercel.app/interst",{
       method:"POST",
       headers:{
         "content-type":"application/json"

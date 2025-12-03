@@ -20,7 +20,7 @@ const AddCrops = () => {
               ownerEmail: user.email,
               }
             }
-        fetch("http://localhost:3000/products", {
+        fetch("https://3d-models-server-coral.vercel.app/products", {
             method: 'POST',
             headers: {
                 "Content-type" : "application/json"

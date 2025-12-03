@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/productsDetails/:id",
-        loader: ({params}) => fetch(`http://localhost:3000/products/${params.id}`),
+        loader: ({params}) => fetch(`https://3d-models-server-coral.vercel.app/products/${params.id}`),
         element: <PrivetRout> 
                     <ProductsDetails></ProductsDetails>
                 </PrivetRout>

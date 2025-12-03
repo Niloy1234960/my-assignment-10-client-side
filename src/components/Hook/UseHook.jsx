@@ -11,7 +11,7 @@ const UseHook = () => {
 
     useEffect(()=>{
         setLoading(true)
-        axios("http://localhost:3000/products")
+        axios("https://3d-models-server-coral.vercel.app/products")
         .then(data => setTrees(data.data))
         .catch(err => setError(err))
         .finally(()=> setLoading(false))

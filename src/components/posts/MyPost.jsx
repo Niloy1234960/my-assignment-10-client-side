@@ -9,7 +9,7 @@ const MyPost = () => {
   const [post, setPost] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch(`http://localhost:3000/myPost?email=${user.email}`)
+    fetch(`https://3d-models-server-coral.vercel.app/myPost?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setPost(data);

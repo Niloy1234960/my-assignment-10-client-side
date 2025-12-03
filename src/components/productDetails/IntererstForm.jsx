@@ -7,7 +7,7 @@ const IntererstForm = () => {
     const [insertData,setInsertData]=useState([])
     const [loading,setLoading]=useState(true)
 useEffect(()=>{
-    fetch(`http://localhost:3000/interst?email=${user.email}`)
+    fetch(`https://3d-models-server-coral.vercel.app/interst?email=${user.email}`)
     .then(res=>res.json()).
     then(data =>{
         setInsertData(data)

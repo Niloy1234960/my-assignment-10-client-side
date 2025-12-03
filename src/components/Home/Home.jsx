@@ -7,7 +7,7 @@ import FeaturedCrops from "../AgroNews/FeaturedCrops";
 import FarmerSupport from "../AgroNews/FarmerSupport";
 
 const latestProductPromise = fetch(
-  "http://localhost:3000/latest-products"
+  "https://3d-models-server-coral.vercel.app/latest-products"
 ).then((res) => res.json());
 
 const Home = () => {
