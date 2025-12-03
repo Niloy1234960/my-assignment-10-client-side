@@ -152,7 +152,7 @@ const Navbar = () => {
       </div>
 
 
-      {/* ========== RIGHT SIDE (AUTH BUTTONS) ========== */}
+  
       <div className="navbar-end md:gap-5">
 
         {user ? (

@@ -30,14 +30,14 @@ const MyProfile = () => {
 
       <div className="w-full max-w-sm bg-white/20 backdrop-blur-lg shadow-xl rounded-2xl p-6 text-center border border-white/40">
 
-        {/* Profile Image */}
+        
         <img
           src={profile.photo}
           className="w-28 h-28 rounded-full mx-auto shadow-lg border-4 border-white object-cover"
           alt="profile"
         />
 
-        {/* If Edit Mode Active = Show Form */}
+        
         {editMode ? (
           <div className="mt-4 space-y-3">
             <input
@@ -75,7 +75,7 @@ const MyProfile = () => {
             </button>
           </div>
         ) : (
-          // Normal View
+         
           <>
             <h2 className="mt-4 text-2xl font-bold text-white drop-shadow-lg">
               {profile.name}

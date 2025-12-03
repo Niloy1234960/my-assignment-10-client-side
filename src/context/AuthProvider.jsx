@@ -16,7 +16,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Track auth state
+  
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -25,24 +25,24 @@ const AuthProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  // Google login function
+  
   const googleLogin = () => {
     setLoading(true);
     return signInWithPopup(auth, provider);
   };
 
-  // Email register function
+ 
   const creatUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  // Logout function
+ 
   const Logout = () => {
     return signOut(auth);
   };
 
-  // Email login function
+  
   const Login = (email, password) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);

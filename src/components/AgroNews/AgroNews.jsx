@@ -22,12 +22,12 @@ export default function AgroNews() {
     <section className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
-        {/* Heading */}
+        
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">
           Agro News & Blogs
         </h2>
 
-        {/* Blog List */}
+       
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
 
           {blogs.map((item, i) => (

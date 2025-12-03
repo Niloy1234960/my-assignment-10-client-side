@@ -51,14 +51,14 @@ const Login = () => {
         <form onSubmit={hendlelogin}  className="card-body bg-[url('https://i.ibb.co.com/gb0LC0LD/05ae154c9e5444b530a8c480796242e5.jpg')] bg-cover bg-center text-white rounded-xl">
             <h1 className="text-3xl font-bold text-center">Login your account</h1>
           <fieldset className="fieldset">
-            {/* email field */}
+            
             <label className="label">Email</label>
             <input name="email" ref={emailRef} type="email" className="input text-black" 
             placeholder="Email" 
             required
             />
             
-            {/* password field */}
+           
             <div className="relative">
                           <label className="label ">Password</label>
                         <input type={show ?"text" : "password"} 

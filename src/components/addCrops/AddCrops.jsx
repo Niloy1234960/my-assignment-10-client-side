@@ -44,7 +44,7 @@ const AddCrops = () => {
           <div className="card-body p-6 relative">
             <h2 className="text-2xl font-bold text-center mb-6">Add New Crops</h2>
             <form onSubmit={handleSubmit} className="space-y-4 ">
-              {/* Name Field */}
+              
               <div>
                 <label className="label font-medium">Crops Name</label>
                 <input
@@ -56,7 +56,6 @@ const AddCrops = () => {
                 />
               </div>
 
-              {/* Description Textarea */}
               <div>
                 <label className="label font-medium">Description</label>
                 <textarea
@@ -68,7 +67,7 @@ const AddCrops = () => {
                 ></textarea>
               </div>
 
-              {/* Category Dropdown */}
+             
               <div>
                 <label className="label font-medium">Category</label>
                 <select
@@ -88,7 +87,7 @@ const AddCrops = () => {
                 </select>
               </div>
 
-              {/* rentPrice */}
+             
               <div>
                 <label className="label font-medium">Price Unit</label>
                 <input
@@ -100,7 +99,7 @@ const AddCrops = () => {
                 />
               </div>
 
-              {/* Location */}
+            
               <div>
                 <label className="label font-medium">Location</label>
                 <input
@@ -112,7 +111,7 @@ const AddCrops = () => {
                 />
               </div>
 
-              {/* Image URL */}
+              
               <div>
                 <label className="label font-medium">Imgae Url</label>
                 <input
@@ -124,7 +123,7 @@ const AddCrops = () => {
                 />
               </div>
 
-              {/* Submit Button */}
+            
               <button
                 type="submit"
                 className="btn w-full text-white mt-6 rounded-full bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]  hover:scale-103 transition-all duration-200"

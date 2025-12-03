@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 const Product = ({ product }) => {
-  const { name, type, owner, pricePerUnit, image, location, _id } = product;
+  const { name,  owner, pricePerUnit, image, location, _id } = product;
   return (
     <div
       className="shadow-sm  p-4 border border-gray-200  bg-gradient-to-br from-[#f0fff4] to-[#e6ffe6] transition-all duration-300 ease-out 

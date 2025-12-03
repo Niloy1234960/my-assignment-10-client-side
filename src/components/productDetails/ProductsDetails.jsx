@@ -66,9 +66,9 @@ const ProductsDetails = () => {
   return (
     <div>
       <div className="min-h-screen bg-white flex items-center justify-center p-6 font-sans">
-        {/* Main Grid Container */}
+        
         <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Side: Image Section */}
+          
           <div className="w-full h-[400px] bg-gray-100">
             <img
               src={image}
@@ -77,12 +77,11 @@ const ProductsDetails = () => {
             />
           </div>
 
-          {/* Right Side: Product Details Section */}
           <div className="flex flex-col items-start">
-            {/* Green Accent Line */}
+          
             <div className="w-10 h-1 bg-green-600 mb-8"></div>
 
-            {/* Title - Serif Font to match screenshot */}
+           
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4 tracking-tight">
               Sample Product
             </h1>
@@ -94,10 +93,10 @@ const ProductsDetails = () => {
                 <h1 className="mb-3 font-semibold text-xl"><span className="font-bold">Quantity:</span> {quantitys}</h1>
            </div>
 
-            {/* Price */}
+           
            
 
-            {/* Description Text */}
+            
             <p className="text-gray-800 font-bold text-lg leading-relaxed mb-10">
              {
                 description
@@ -112,7 +111,7 @@ const ProductsDetails = () => {
       <div>
        
       </div>    
-      {/* start from design  */}
+      
 
       <div className="mt-10 flex justify-center">
   <div className="w-full max-w-2xl bg-white rounded-2xl shadow-lg border p-8">
@@ -121,7 +120,7 @@ const ProductsDetails = () => {
       💬 Express Your Interest
     </h2>
 
-    {/* Quantity Input */}
+    
     <div className="mb-6">
       <label className="block text-gray-700 font-semibold mb-2">
         Quantity
@@ -140,7 +139,7 @@ const ProductsDetails = () => {
       )}
     </div>
 
-    {/* Message Input */}
+    
     <div className="mb-6">
       <label className="block text-gray-700 font-semibold mb-2">
         Message (Optional)
@@ -154,7 +153,7 @@ const ProductsDetails = () => {
       ></textarea>
     </div>
 
-    {/* Total Price */}
+    
     <div className="mb-6">
       <label className="block text-gray-700 font-semibold mb-2">
         Total Price
@@ -165,7 +164,7 @@ const ProductsDetails = () => {
       </div>
     </div>
 
-    {/* Submit Button */}
+    
     <button
       onClick={handleSubmit}
       disabled={quantitys < 1}
@@ -176,7 +175,7 @@ const ProductsDetails = () => {
   </div>
 </div>
 
-{/* Modal */}
+
 {showModal && (
   <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
     <div className="bg-white p-6 rounded-2xl shadow-xl max-w-sm w-full">

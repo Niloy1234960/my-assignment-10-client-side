@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReceiveForm = ({ Data }) => {
 
-    // Extract your data exactly as you wrote
+    
     const { formData } = Data;
     const { buyer_name, totalPrice, message, buyer_email } = formData;
 

@@ -1,8 +1,8 @@
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6'; // New X logo
+import { FaXTwitter } from 'react-icons/fa6'; 
 
 const Footer = ({ isLoggedIn }) => {
-  // Define links based on login status (optional, but good practice)
+  
   const accountLinks = isLoggedIn
     ? [
         { name: 'Profile', href: '/profile' },
@@ -16,8 +16,8 @@ const Footer = ({ isLoggedIn }) => {
 
   const quickLinks = [
     { name: 'All Crops', href: '/all-crops' },
-    { name: 'How It Works', href: '#how-it-works' }, // or a dedicated page
-    { name: 'Agro News', href: '#agro-news' },      // or a dedicated page
+    { name: 'How It Works', href: '#how-it-works' }, 
+    { name: 'Agro News', href: '#agro-news' },      
   ];
 
   const legalLinks = [
@@ -30,7 +30,7 @@ const Footer = ({ isLoggedIn }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           
-          {/* Column 1: Logo & Mission */}
+      
           <div className="col-span-2 md:col-span-1">
             <h3 className="text-2xl font-bold text-green-400 mb-3">
             🌾KrishiLink
@@ -43,7 +43,7 @@ const Footer = ({ isLoggedIn }) => {
             </p>
           </div>
 
-          {/* Column 2: Quick Links */}
+      
           <div>
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -57,7 +57,7 @@ const Footer = ({ isLoggedIn }) => {
             </ul>
           </div>
 
-          {/* Column 3: Account/Legal */}
+      
           <div>
             <h4 className="font-semibold text-lg mb-4">Account & Legal</h4>
             <ul className="space-y-2">
@@ -78,7 +78,6 @@ const Footer = ({ isLoggedIn }) => {
             </ul>
           </div>
 
-          {/* Column 4: Social Media */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Connect With Us</h4>
             <div className="flex space-x-4 text-2xl">
@@ -98,7 +97,7 @@ const Footer = ({ isLoggedIn }) => {
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright */}
+ 
         <div className="mt-10 pt-6 border-t border-gray-700">
           <p className="text-center text-gray-500 text-sm">
             &copy; {new Date().getFullYear()} Project Name. All Rights Reserved.
